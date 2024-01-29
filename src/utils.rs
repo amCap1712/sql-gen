@@ -52,6 +52,7 @@ pub fn convert_data_type(data_type: &str) -> &str {
         "int4" => "i32",
         "int2" => "i16",
         "text" => "String",
+        "_text" => "String",
         "varchar" => "String",
         "jsonb" => "sqlx::Json",
         "timestamptz" => "chrono::DateTime<chrono::Utc>",
